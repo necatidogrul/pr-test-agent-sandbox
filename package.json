@@ -1,0 +1,12 @@
+{
+  "name": "pr-test-agent-sandbox",
+  "version": "1.0.0",
+  "description": "Small sandbox repo for exercising the PR test agent end to end.",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
