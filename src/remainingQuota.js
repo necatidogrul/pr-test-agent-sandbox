@@ -3,7 +3,8 @@
  */
 function remainingQuota(totalMb, usedMb) {
   const left = totalMb - usedMb;
-  return left < 0 ? 0 : left;
+  if (left < 0) return 0;
+  return left > totalMb ? totalMb : left;
 }
 
 module.exports = { remainingQuota };
