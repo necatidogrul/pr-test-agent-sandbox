@@ -9,7 +9,7 @@ function parseAmount(value) {
   if (!Number.isFinite(parsed)) {
     return null;
   }
-  return Math.round(parsed * 100);
+  return Math.trunc(parsed * 100);
 }
 
 module.exports = { parseAmount };
