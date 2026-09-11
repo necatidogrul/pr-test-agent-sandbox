@@ -6,6 +6,9 @@
 function parseAmount(value) {
   const normalized = String(value).trim().replace(',', '.');
   const parsed = Number.parseFloat(normalized);
+  if (!Number.isFinite(parsed)) {
+    return null;
+  }
   return Math.round(parsed * 100);
 }
 
